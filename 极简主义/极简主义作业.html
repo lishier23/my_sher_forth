@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function LEFT(){
+				E0=document.getElementById("myimage");
+				var E1=Number(E0.src[E0.src.length-5])-1;
+				if (E1 == 0){
+					E1=5;
+				}
+				E0.src=E1+".png";
+			}
+			function RIGHT(){
+				E0=document.getElementById("myimage");
+				var E1=Number(E0.src[E0.src.length-5])+1;
+				if (E1 == 6){
+					E1=1;
+				}
+				E0.src=E1+".png";
+			}
+			
+			function Normal(){
+				RIGHT();
+				setTimeout("Normal()",4000);
+			}
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<img src="1.png" style="float: left;" id="myimage" class="1"/>
+		<input type="button" value="<" style="float: left;" id="L" onclick="LEFT()"/>
+		<input type="button" value=">" style="float: left;" id="R" onclick="RIGHT()"/>
+		<script type="text/javascript">
+			Normal();
+		</script>
+	</body>
+</html>
