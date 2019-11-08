@@ -1,0 +1,106 @@
+.top-index {
+    height: 80px;
+}
+
+.topnav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 998;
+    margin: 0 auto;
+    max-width: 1200px;
+    min-width: 700px;
+}
+
+.topnav-ul {
+    border: 1.8px solid orange;
+    border-radius: 18px 18px 18px 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #FFFFDF;
+    line-height: 40px;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+
+.topnav-li {
+    float: left;
+    margin-right: 50px;
+}
+
+.topnav-li span,
+.topnav-li a {
+    display: block;
+    color: orange;
+    text-align: center;
+    padding: 14px 70px;
+    text-decoration: none;
+}
+
+.topnav-li span:hover,
+.topnav-li a:hover {
+    cursor: default;
+    color: #FF2D2D;
+    transition: all ease-in-out 0.2s;
+}
+
+.nav-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.nav-dropdown ul {
+    list-style-type: none;
+}
+
+.nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF4C1;
+    width: 204px;
+    box-shadow: 0px 6px 8px 0px #8E8E8E;
+    z-index: 1;
+    border: 2px solid #FFF4C1;
+    border-radius: 10px 10px 10px 10px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.nav-dropdown-content ul {
+    padding: 0;
+}
+
+.nav-dropdown-content ul li a {
+    color: black;
+}
+
+.nav-dropdown-content ul li a:hover {
+    cursor: pointer;
+}
+
+.nav-dropdown:hover .nav-dropdown-content {
+    display: block;
+}
+
+.about {
+    float: right;
+    margin-right: 0;
+}
+
+.copyright-bar {
+    height: 2px;
+    width: 85%;
+    background-color: grey;
+    margin: 50px auto;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 20px;
+    font-family: Consolas, Helvetica, sans-serif;
+}
+
+.copyright p {
+    margin: 10px auto;
+}

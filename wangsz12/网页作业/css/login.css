@@ -1,0 +1,130 @@
+body {
+    background-image: url("../image/login-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login {
+    margin: 0 auto;
+    background-color: white;
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+    border: 2px solid white;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.title-user {
+    margin-top: 0;
+    font-family: "Microsoft YaHei","微软雅黑";
+}
+
+.title-input {
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.account-input {
+    height: 30px;
+    width: 280px;
+    display: inline-block;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom-color: 2px blue;
+}
+
+.account-input :focus {
+    border: 1px solid skyblue;
+}
+
+.submit {
+    height: 40px;
+    width: 300px;
+    background-color: navy;
+    color: white;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 37px;
+    font-size: 16px;
+    transition: all 0.4s;
+}
+
+.submit:hover {
+    background-color: skyblue;
+    color: black;
+    transition: all 0.4s;
+}
+
+.getaccount {
+    margin: 7px;
+    float: right;
+    height: 25px;
+    width: 150px;
+    background-color: orange;
+    color: red;
+    border-radius: 4px 4px 4px 4px;
+    cursor: pointer;
+    text-align: center;
+    line-height: 25px;
+}
+
+.radio {
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.login-notice {
+    position: absolute;
+    top: 15px;
+    left: 46%;
+    font-size: 40px;
+    z-index: 999;
+    color: orange;
+    font-weight: bold;
+    animation: noticecolorswitch 5s ease-in-out infinite;
+}
+
+@keyframes noticecolorswitch {
+    0% {
+        color: orange;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+}
+
+@-webkit-keyframes noticecolorswitch {
+    0% {
+        color: orange;
+    }
+
+    25% {
+        color: red;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    75% {
+        color: green;
+    }
+}
