@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>-&nbsp&nbsp主页&nbsp&nbsp-&nbsp&nbspwangsz12的预习作业</title>
+        <link rel="stylesheet" type="text/css" href="../css/basic.css">
+        <link rel="stylesheet" type="text/css" href="../css/index.css">
+        <link rel="stylesheet" type="text/css" href="../css/index-animation.css">
+        <script src="../JavaScript/index.js"></script>
+    </head>
+    <body onload="showSubtopic()">
+        <div class="top-index"></div>
+        <div class="topnav">
+            <ul class="topnav-ul">
+            <li class="topnav-li"><img src="../image/wangsz12.png" height="80" width="72"></li>
+            <div class="nav-dropdown about">
+                <li class="topnav-li">
+                    <a style="cursor: pointer;" href="about.html">关于作者</a>
+                    <div class="nav-dropdown-content">
+                        <ul>
+                            <li><a style="padding: 15px 0;" href="about.html#introduction">个人简介</a></li>
+                            <li><a style="padding: 15px 0;" href="about.html#experience">个人经历</a></li>
+                            <li><a style="padding: 15px 0;" href="about.html#hobby">兴趣爱好</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </div>
+            <div class="nav-dropdown"><li class="topnav-li"><a style="cursor: pointer;" href="index.html">主页</a></li></div>
+            </ul>
+        </div>
+        <div class="welcome">
+            <div class="topic">
+                <h1>Welcome</h1>
+            </div>
+            <div class="subtopic">
+                <h3 id="subt1">_</h3>
+                <h3 id="subt2">_</h3>
+                <h3 id="subt3">_</h3>
+                <h3 id="subt4">_</h3>
+                <h3 id="subt5">_</h3>
+                <h3 id="subt6">_</h3>
+                <h3 id="subt7">_</h3>
+                <h3 id="subt8">_</h3>
+                <h3 id="subt9">_</h3>
+                <h3 id="subt10">_</h3>
+                <h3 id="subt11">_</h3>
+                <h3 id="cursor">_</h3>
+            </div>
+            <img src="../image/wangsz12.png" height="250" width="225">
+        </div>
+        <div class="main">
+            <div class="arrow arrow-left" id="switchleft">
+                <a onclick="last();"><</a>
+            </div>
+            <div class="imgbox" id="imgboxid">
+                <img src="../image/index-imgbox/main1.jpg" class="img-now" id="img1" onmouseover="clearInterval(autoSwitch)" onmouseout="continueAutoSwitch()">
+                <img src="../image/index-imgbox/main2.jpeg" class="img-others" id="img2" onmouseover="clearInterval(autoSwitch)" onmouseout="continueAutoSwitch()">
+                <img src="../image/index-imgbox/main3.jpg" class="img-others" id="img3" onmouseover="clearInterval(autoSwitch)" onmouseout="continueAutoSwitch()">
+                <img src="../image/index-imgbox/main4.jpg" class="img-others" id="img4" onmouseover="clearInterval(autoSwitch)" onmouseout="continueAutoSwitch()">
+            </div>
+            <div class="arrow arrow-right">
+                <a onclick="next();" id="switchright">></a>
+            </div>
+            <div class="bottomnav">
+                <div class="circle bottomnav-now" id="bnav1" onclick="selectImg(1)"></div>
+                <div class="circle bottomnav-others" id="bnav2" onclick="selectImg(2)"></div>
+                <div class="circle bottomnav-others" id="bnav3" onclick="selectImg(3)"></div>
+                <div class="circle bottomnav-others" id="bnav4" onclick="selectImg(4)"></div>
+            </div>
+            <div class="explanation">
+                <p>我冥思苦想 想不到一个好的实现滑动式轮播图的方案 于是做了这个淡入淡出式的</p>
+                <p>然而2019年11月8日下午5:37 我想到了怎样实现滑动式轮播图</p>
+                <p>然而离ddl只有4个多小时 我还有晚自习要上 和一堆stuff要做</p>
+                <p>只好下个版本见啦 ε=(´ο｀*)))</p>
+            </div>
+            <div class="copyright-bar"></div>
+            <div class="copyright">
+                <p>&copy;&nbspwangsz12</p>
+                <p>Designed by wangsz12</p>
+                <p>Version: 2.2</p>
+            </div>
+        </div>
+        <!--input type="button" onclick="test()" value="test"-->
+    </body>
+</html>
